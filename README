@@ -1,0 +1,62 @@
+# Projeto: Processamento de Arquivos CSV com Python
+
+Este projeto utiliza Python e a biblioteca pandas para ler e manipular arquivos CSV.  
+O script (`excelTocsv.py`) recebe o caminho de um arquivo `.csv` como argumento, realiza a leitura e constroi um arquivo `csv`.
+
+o script (`search_by_nane`) recebe um caminho de um arquivo `.csv` e filtra o que usuário quer 
+---
+
+## 📦 Pré-requisitos
+
+- Python 3.8 ou superior
+- pip (gerenciador de pacotes do Python)
+- Git (opcional, caso deseje clonar o projeto de um repositório remoto)
+
+
+---
+
+## Estruture o projeto da seguinte forma:
+manipulando_planilhas/
+├── Agregados_por_setores_basico_BR.csv
+├── excelTocsv.py
+├── requirements.txt
+├── search_by_name.py
+└── venv/
+
+## 🧪 Criação do ambiente virtual
+
+### ✅ Linux / Ubuntu:
+
+```bash
+python3 -m venv venv
+
+
+Ativação do ambiente virtual do python
+    Ubunto
+        source venv/bin/activate
+    Win
+        venv\Scripts\activate.bat
+
+
+Instalação das dependências:
+pip install -r requirements.txt
+
+Utilizando os scripts
+
+    linux
+        python3 excelTocsv.py Agregados_por_setores_basico_BR.csv (ou outro arquivo `csv`)
+        python3 search_by_name.py Agregados_por_setores_basico_BR.csv (ou outro arquivo `csv`)
+
+    python excelTocsv.py Agregados_por_setores_basico_BR.csv
+    python search_by_name.py Agregados_por_setores_basico_BR.csv
+
+
+
+## Observação
+
+- Os scripts devem ser executados com o ambiente virtual ativado.
+
+##  Encerrando o ambiente virtual
+
+Após finalizar o uso, digite:
+deactivate
