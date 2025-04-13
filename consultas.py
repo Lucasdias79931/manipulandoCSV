@@ -2,10 +2,11 @@ import os
 import pandas
 
 class Dataset:
-    def __init__(self):
+    def __init__(self, datasetPath):
         self.allDataset = list()
         #Salva os caminhos para os datasest
         self.sizeDatasetes = 0
+        self.allDataset = self.varredura(datasetPath)
 
     def varredura(self, allDatasetPath):
         try:
